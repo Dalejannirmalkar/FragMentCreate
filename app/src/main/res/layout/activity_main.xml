@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="app.abhijeet.mrdhwaj.fragmentcreate.MainActivity">
+<Button
+    android:id="@+id/firstfrag"
+    android:text="FirstFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="changefragment"/>
+    <Button
+        android:id="@+id/secondfrag"
+        android:text="SecondFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="changefragment"/>
+    <fragment
+        android:id="@+id/fragmentshow"
+        android:name="app.abhijeet.mrdhwaj.fragmentcreate.FirstFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
